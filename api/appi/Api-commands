@@ -1,0 +1,25 @@
+GET all books:
+
+1. curl -X GET http://localhost:8080/books
+
+
+
+POST (Add) a new book:
+
+2. curl -X POST http://localhost:8080/books/add -d '{"id": "9", "book_name": "1984", "author": "George Orwell"}' -H "Content-Type: application/json"
+
+
+
+PUT (Update) an existing book:
+
+3. curl -X POST -d '{"id":"10", "book_name":"jurasic park", "author":"joe root"}' -H "Content-Type: application/json" http://localhost:8080/books/add
+
+
+DELETE Command (Delete a Book):
+
+4. curl -X DELETE 'http://localhost:8080/books/delete?id=6'
+
+
+GET Command (Get a Book by ID):
+
+5. curl -X GET http://localhost:8080/books/3
